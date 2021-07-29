@@ -1,0 +1,8 @@
+name: SmartTool
+version: 2.0
+main: com.bnjrKemal.SmartTool.SmartToolMain
+api-version: 1.13
+authors: [bnjrKemal]
+commands:
+  smarttool:
+    ailases: [st, stool]

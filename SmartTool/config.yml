@@ -1,0 +1,37 @@
+#by bnjrKemal. DM için bnjrKemal#7329
+
+#Kullanımı:
+#- /smarttool give - config.yml'den ayarlayabileceğiniz aletlerini düzenleyebilirsin.
+#- "/smarttool give"'den verilen itemlere "özel alet" diyelim.
+#- Bu eklentinin amacı: özel aletlerimizin sayesinde, kırdığımız bloklarını, öldürdüğümüz mob droplarını, oltayla tuttuğumuz balıklar ve itemlerini, yay ile fırlatarak öldürdüğümüz mob droplarını ayarladığımız sandığa depolar.
+#- Özel aletini sandığa bağlamak için sandığa sağ tıklamanız yeterli. Özel aletlerin sandığı kayıt tutacak dosya(YAML, data gibi) kullanılmıyor. Kayıt direkt özel aletin içinde tutuluyor.
+#- Depolanan sandığa da uzaktan erişim mümkün. Erişmek için eline özel alet tutup SHIFT ile sağ tıklamanız yeterli. Düzenleyebiliyorsunuz. Sandık düzenleme fonksiyonu gibi kullanılmıyor, performans düşürücü fonksiyonlar bulunmuyor.
+#
+#Dikkat:
+#- WorldGuard ile korumaya alınmış alanlarda (BUILD flag'ı kapalı olan alanlarda) OP yetkisi bulunmayanlara kullanımı izin verilmiyor.
+#- ASkyblock, BSkyblock, FabledSkyblock, Faction, GriefPrevention gibi eklentilerdeki claimli alanlarda zaten yetkisi olmayanlar sandığı açamayacaklar fakat sandığı bağlayıp öğelerini depolayabilirler. Talep edildikçe gereği yapılır.
+no-permission: "&3[&bAkıllı Araç&3] &cYetkin yok!"
+save-successfully: "&3[&bAkıllı Araç&3] &aBağlantı kuruldu."
+same-linked: "&3[&bAkıllı Araç&3] &cZaten bağlantı kurulmuş."
+no-linked: "&3[&bAkıllı Araç&3] &cBağlı olan sandık bulunamadı. Bağlantı kaldırıldı."
+your-chest-is-fully: "&3[&bAkıllı Araç&3] &cBağlı olan sandığın envanteri dolu! Öğeler yerde!"
+only-player-use: "&3[&bAkıllı Araç&3] &cBu komut sadece oyun içinde geçerli."
+usage:
+  - "&3Akıllı Araç için yardım"
+  - ""
+  - "&e /stool reload - config.yml'i yeniler."
+  - "&e /stool give   - Sandıkları bağlamak için akıllı araçlar verir."
+  - ""
+tool-name: "&aAkıllı Araç"
+reloaded-config: "&3[&bAkıllı Araç&3] &aconfig.yml dosyası yenilendi."
+given-tool: "&3[&bAkıllı Araç&3] &cÖğeler verildi."
+removed-linked: "&3[&bAkıllı Araç&3] &cBağlantı kesildi."
+items: #"/smarttool give" için verilecek itemler..
+- DIAMOND_PICKAXE
+- DIAMOND_AXE
+- DIAMOND_SHOVEL
+- DIAMOND_SWORD
+- SHEARS
+- BOW
+- FISHING_ROD
+- CROSSBOW
